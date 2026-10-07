@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>耳の本屋さん</title>
+<meta name="description" content="かなとがAudibleで実際に聴いた本の棚。気分を選んで、今日の1冊を引いてみてください。">
+<link rel="icon" href="img/nikkori.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <h1>耳の本屋さん</h1>
+    <p class="lead">実際に聴いた <b id="count">28</b> 冊から、今日の1冊を。</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. 今日の1冊を引く -->
+  <section class="draw" aria-labelledby="draw-title">
+    <div class="draw-head">
+      <div class="bird-wrap">
+        <p class="bubble" id="bubble">今日は、どんな気分？</p>
+        <img class="bird" id="bird" src="img/nikkori.png" alt="ヘッドホンをつけたオカメインコ" width="130" height="130">
+      </div>
+      <h2 id="draw-title">今日の1冊を引く</h2>
+    </div>
+
+    <div class="moods" id="moods" role="radiogroup" aria-label="今日の気分"></div>
+
+    <button class="draw-btn" id="draw-btn" type="button">
+      <span class="draw-btn-main">1冊ひいてみる</span>
+      <span class="draw-btn-sub" id="draw-sub">棚の中から、おまかせで選びます</span>
+    </button>
+
+    <div class="result" id="result" aria-live="polite"></div>
+
+    <a class="to-shelf" href="#shelf-title">自分で選びたい方は、棚へ <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <!-- 3. 棚 -->
+  <section class="shelf-sec" aria-labelledby="shelf-title">
+    <div class="shelf-head">
+      <h2 id="shelf-title">棚から探す</h2>
+      <p class="hint">本を押すと、感想が読めます</p>
+    </div>
+    <div class="rank-filter" id="rank-filter" role="radiogroup" aria-label="聴きやすさで絞る"></div>
+    <p class="shelf-status" id="shelf-status" aria-live="polite"></p>
+    <div class="case">
+      <div class="hiradai">
+        <p class="hira-sign">いまの推し<span>ナレーターさんの演技ごと楽しんでほしい</span></p>
+        <div class="hira-row" id="hira"></div>
+      </div>
+      <div class="bookcase" id="bookcase"></div>
+    </div>
+
+    <details class="rank-guide">
+      <summary>A・B・C って何？</summary>
+      <ul>
+        <li><span class="dot A">A</span>家事や通勤をしながらでも楽しめました</li>
+        <li><span class="dot B">B</span>ところどころ聴き直すと楽しめました</li>
+        <li><span class="dot C">C</span>人物や内容をメモしながら聴くと楽しめました</li>
+      </ul>
+      <p>かなとが実際に聴いたときの「耳での聴きやすさ」です。作品の面白さのランクではありません。</p>
+    </details>
+  </section>
+
+</main>
+
+<footer>
+  <img src="img/pekori.png" alt="" width="70" height="70">
+  <p>毎月、聴いた本を棚に足していきます。</p>
+  <p><a href="https://note.com/glad_sable8625/n/n0bdc395bff43" target="_blank" rel="noopener">保存版の記事（note）を読む</a></p>
+  <small>感想は、かなと本人のものです。紹介先のnote記事には広告・アフィリエイトリンクが含まれます。</small>
+</footer>
+
+<!-- 感想シート -->
+<dialog id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-inner">
+    <button class="sheet-close" type="button" data-close aria-label="閉じる">×</button>
+    <div id="sheet-body"></div>
+  </div>
+</dialog>
+
+<noscript><p class="noscript">本棚を見るには、JavaScriptを有効にしてください。</p></noscript>
+</body>
+</html>
