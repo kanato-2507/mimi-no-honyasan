@@ -39,7 +39,8 @@ window.BOOK_DATA = [
     "url": "https://note.com/glad_sable8625/n/ndc3a527315b5",
     "moods": [
       "moving",
-      "warm"
+      "warm",
+      "courage"
     ],
     "scenes": [
       "家事"
@@ -96,7 +97,7 @@ window.BOOK_DATA = [
     "brief": "最後までゾワゾワ",
     "url": "https://note.com/glad_sable8625/n/nc7cf3d23002d",
     "moods": [
-      "dark"
+      "ghost"
     ],
     "scenes": [
       "じっくり"
@@ -226,7 +227,7 @@ window.BOOK_DATA = [
     "url": "https://note.com/glad_sable8625/n/ndc3a527315b5",
     "moods": [
       "mystery",
-      "dark"
+      "ghost"
     ],
     "scenes": [
       "家事",
@@ -371,7 +372,7 @@ window.BOOK_DATA = [
     "brief": "点と点がつながるたびゾワッ",
     "url": "https://note.com/glad_sable8625/n/nb334e2360a45",
     "moods": [
-      "dark",
+      "ghost",
       "mystery"
     ],
     "scenes": [
@@ -613,7 +614,7 @@ window.BOOK_DATA = [
     "brief": "ラストは巻き戻さずにいられない",
     "url": "https://note.com/glad_sable8625/n/n42da016eb59b",
     "moods": [
-      "dark",
+      "ghost",
       "mystery"
     ],
     "scenes": [
@@ -645,7 +646,7 @@ window.BOOK_DATA = [
     "brief": "フルキャストでラジオドラマみたい",
     "url": "https://note.com/glad_sable8625/n/ne72eba59bb3b",
     "moods": [
-      "dark",
+      "ghost",
       "mystery"
     ],
     "scenes": [
@@ -716,7 +717,6 @@ window.BOOK_DATA = [
     "url": "https://note.com/glad_sable8625/n/n0a6c040fdd05",
     "moods": [
       "ghost",
-      "dark",
       "world"
     ],
     "scenes": [
@@ -753,7 +753,8 @@ window.BOOK_DATA = [
     "url": "https://note.com/glad_sable8625/n/ndc58c7655eca",
     "moods": [
       "world",
-      "moving"
+      "moving",
+      "courage"
     ],
     "scenes": [],
     "paragraphs": [
@@ -811,8 +812,7 @@ window.BOOK_DATA = [
     "brief": "最初に人物を整理すると聴きやすい",
     "url": "https://note.com/glad_sable8625/n/n42da016eb59b",
     "moods": [
-      "ghost",
-      "dark"
+      "ghost"
     ],
     "scenes": [
       "じっくり"
@@ -881,7 +881,8 @@ window.BOOK_DATA = [
     "brief": "同級生6人を先に整理すると楽",
     "url": "https://note.com/glad_sable8625/n/n88814556fbb1",
     "moods": [
-      "moving"
+      "moving",
+      "courage"
     ],
     "scenes": [
       "じっくり"

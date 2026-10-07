@@ -8,11 +8,11 @@
   // 気分。色は背表紙の色にもなる
   const MOODS = [
     { id: 'warm',    label: 'ほっとしたい',   ic: '☕', color: '#c98a2b' },
-    { id: 'moving',  label: 'じんわりしたい', ic: '🥲', color: '#c4675c' },
+    { id: 'moving',  label: '心を揺さぶられたい', ic: '🥲', color: '#c4675c' },
     { id: 'fun',     label: 'クスッと笑いたい', ic: '😊', color: '#d9822b' },
     { id: 'mystery', label: '謎を楽しみたい', ic: '🔍', color: '#3d6c8c' },
-    { id: 'ghost',   label: '怪談でゾクッと', ic: '👻', color: '#5d5487' },
-    { id: 'dark',    label: '人の怖さにゾワッ', ic: '🌀', color: '#7a3b3b' },
+    { id: 'ghost',   label: 'ゾクッとしたい', ic: '👻', color: '#5d5487' },
+    { id: 'courage', label: '勇気をもらいたい', ic: '🌱', color: '#66854c' },
     { id: 'world',   label: '別世界に浸りたい', ic: '🌏', color: '#2f6f5a' },
   ];
   const RANK = {
@@ -299,3 +299,4 @@
   }
   init();
 })();
+
